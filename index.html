@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <title>D3 SVG Bar Chart</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="./bar-chart.js" defer></script>
+    <style>
+      .bar text {
+        fill: white;
+        pointer-events: none;
+      }
+
+      body {
+        font-family: sans-serif;
+      }
+
+      .major-x-axis > .tick > line {
+        stroke-width: 2;
+      }
+
+      .minor-x-axis {
+        color: orange;
+      }
+
+      rect {
+        fill: cornflowerblue;
+      }
+
+      svg {
+        background-color: linen;
+      }
+
+      .tooltip {
+        position: absolute;
+        background: pink;
+        border: solid gray 1px;
+        border-radius: 5px;
+        opacity: 0; /* initially hidden */
+        padding: 0.5rem;
+        pointer-events: none;
+      }
+
+      .y-axis .domain {
+        display: none;
+      }
+    </style>
+  </head>
+  <body></body>
+</html>
